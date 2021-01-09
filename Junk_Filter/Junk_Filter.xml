@@ -1,0 +1,125 @@
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Frame name="JunkFrame" parent="UIParent" inherits="UIPanelDialogTemplate" toplevel="true" movable="true" enableMouse="true" text="Junk Filter">
+		<Size x="176" y="242" />
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="UIParent" />
+      <Anchor point="TOPLEFT">
+				<Offset x="0" y="0" />
+			</Anchor>
+		</Anchors>
+    <Layers>
+			<Layer level="OVERLAY">
+				<FontString name="JFConfigTitle" inherits="GameFontNormal" text="Junk Filter">
+					<Size>
+						<AbsDimension x="151" y="64" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="-30" y="17" />
+						</Anchor>
+					</Anchors>
+          <Font name="JFFont" font="Fonts\FRIZQT__.TTF" virtual="true" height="64">
+            <FontHeight>
+              <AbsValue val="64" />
+            </FontHeight>
+          </Font>
+				</FontString>
+      </Layer>
+    </Layers>
+		<Frames>
+			<Button name="JFBtnCheck" inherits="UIPanelButtonTemplate" text="Check Bags">
+				<Size>
+					<AbsDimension x="91" y="31" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="43" y="-25" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFBtnCheck_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="JFBtnTest" inherits="UIPanelButtonTemplate" text="Test Loot">
+				<Size>
+					<AbsDimension x="91" y="31" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="43" y="-62" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFBtnTest_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="JFBtnDelete" inherits="UIPanelButtonTemplate" text="Delete Cheapest">
+				<Size>
+					<AbsDimension x="123" y="31" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="27" y="-99" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFBtnDelete_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="JFButtonOptions" inherits="UIPanelButtonTemplate" text="Options">
+				<Size>
+					<AbsDimension x="99" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="39" y="-136" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFButtonOptions_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="JFBtnHide" inherits="UIPanelButtonTemplate" text="Hide">
+				<Size>
+					<AbsDimension x="91" y="31" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="43" y="-175" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFBtnHide_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>			
+				self:RegisterForDrag("LeftButton");
+			</OnLoad>
+			<OnDragStart>
+				self:StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+			</OnDragStop>
+			<OnEvent>
+				
+			</OnEvent>
+			<OnUpdate>
+
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,86 @@
+lightweight tag 6e1cb416a614ea7cff2a0d00f49e84e1e38b9ba0 3.2.4-r61
+Author:	GitHub <noreply@github.com>
+Date:	Sat Jan 9 11:18:40 2021 +0100
+
+commit 96b273aba401ee5ca1a5b3b2acc5ab7fa3b6b53a
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sun Jan 3 11:06:54 2021 +0100
+
+    function names clean up
+
+commit 96b273aba401ee5ca1a5b3b2acc5ab7fa3b6b53a
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sun Jan 3 11:06:54 2021 +0100
+
+    function names clean up
+
+commit 14ef9077861731d73e3458bcf97f2f2c9aaf38f0
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Jan 2 21:54:17 2021 +0100
+
+    commDKPBuild fix for older versions is back...
+
+commit 7e866f4f76fc68bf7d281ebd5fd2aee101097d7f
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Jan 2 21:40:33 2021 +0100
+
+    version-release etc
+
+commit 889b878eb86f86ae32883dc99d891c00cfef1a5c
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Jan 2 21:04:03 2021 +0100
+
+    second phase
+
+commit f123a5512f9e7a10cf78c5c9018e9b33d774f1c2
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Jan 2 15:28:24 2021 +0100
+
+    clean up on sending msgs
+
+commit 079e6d43db253ea09952339d86d5d18d4d7a15f4
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Dec 26 15:44:38 2020 +0100
+
+    as described in issue 153, on received comm standby list was not being SET
+
+commit 079e6d43db253ea09952339d86d5d18d4d7a15f4
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Dec 26 15:44:38 2020 +0100
+
+    as described in issue 153, on received comm standby list was not being SET
+
+commit 079e6d43db253ea09952339d86d5d18d4d7a15f4
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Dec 26 15:44:38 2020 +0100
+
+    as described in issue 153, on received comm standby list was not being SET
+
+commit 765be791e990e78c226b24da6e661d0c41e30e85
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Dec 26 15:37:21 2020 +0100
+
+    fixed the semicolon and } error from previous commit
+    
+    Additionally, added a optional parameter limit to TableStrFind and Table_Search functions to prevent going over few hunder / thousand records when we need last few dozen or even smaller
+
+commit 765be791e990e78c226b24da6e661d0c41e30e85
+Author: Taidtuskecyh <Taidtuskecyh@gmail.com>
+Date:   Sat Dec 26 15:37:21 2020 +0100
+
+    fixed the semicolon and } error from previous commit
+    
+    Additionally, added a optional parameter limit to TableStrFind and Table_Search functions to prevent going over few hunder / thousand records when we need last few dozen or even smaller
+
+commit a2adc5eaad344d5ce8135aefaed6f5501fe77eb5
+Author: Maarten Plessius <peleccotur@live.nl>
+Date:   Fri Dec 25 13:41:02 2020 +0100
+
+    Update DKPHistory table to show Decay value instead of percentage when filtered on player
+
+commit 76b5f53a48959307b30ba6c7df49c8fa65e1be40
+Author: Maarten Plessius <peleccotur@live.nl>
+Date:   Fri Dec 25 12:05:18 2020 +0100
+
+    Update UserHistory tooltip to show Decay value instead of percentage
+

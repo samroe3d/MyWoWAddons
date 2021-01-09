@@ -1,0 +1,384 @@
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="JunkFilterConfig.lua" />
+	<Frame name="JunkFilterConfig" hidden="true" parent="UIParent" toplevel="true">
+		<Size>
+			<AbsDimension x="485" y="424" />
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset x="204" y="-32" />
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="JFConfigTitle" inherits="GameFontNormal" text="Junk Filter">
+					<Size>
+						<AbsDimension x="151" y="64" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="18" y="-18" />
+						</Anchor>
+					</Anchors>
+          <Font name="JFFont" font="Fonts\FRIZQT__.TTF" virtual="true" height="64">
+            <FontHeight>
+              <AbsValue val="64" />
+            </FontHeight>
+          </Font>
+				</FontString>
+				<FontString name="FontStringEmpty" inherits="GameFontNormal" text="Empty Slots: ">
+					<Size>
+						<AbsDimension x="100" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="10" y="-98" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+				<FontString name="FontStringCopperDelete" inherits="GameFontNormal" text="Max Delete: (copper)">
+					<Size>
+						<AbsDimension x="150" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="10" y="-156" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+				<FontString name="FontStringEmptyMax" inherits="GameFontNormal" text="(Max = 99, Disable = 0)">
+					<Size>
+						<AbsDimension x="150" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="282" y="-98" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="(Max = 999g 99s 99c)">
+					<Size>
+						<AbsDimension x="200" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="282" y="-156" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="Using the maximum values will cause slight interface lag.">
+					<Size>
+						<AbsDimension x="200" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="290" y="-170" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+				<FontString name="FontStringVerbose" inherits="GameFontNormal" text="Reporting Mode:">
+					<Size>
+						<AbsDimension x="120" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="10" y="-310" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringQuality" inherits="GameFontNormal" text="Qualities to Delete: ">
+					<Size>
+						<AbsDimension x="115" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="20" y="-230" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringPoor" inherits="GameFontNormal" text="Poor: ">
+					<Size>
+						<AbsDimension x="50" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="150" y="-230" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringUncommon" inherits="GameFontNormal" text="Common: ">
+					<Size>
+						<AbsDimension x="60" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="240" y="-230" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringUncommon" inherits="GameFontNormal" text="Uncommon: ">
+					<Size>
+						<AbsDimension x="80" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="350" y="-230" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringRare" inherits="GameFontNormal" text="Rare: ">
+					<Size>
+						<AbsDimension x="50" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="150" y="-265" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringEpic" inherits="GameFontNormal" text="Epic: ">
+					<Size>
+						<AbsDimension x="50" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="260" y="-265" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+        <FontString name="FontStringLegendary" inherits="GameFontNormal" text="Legendary: ">
+					<Size>
+						<AbsDimension x="80" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset x="353" y="-265" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="14" />
+					</FontHeight>
+				</FontString>
+        
+			</Layer>
+		</Layers>
+		<Frames>
+          
+      <CheckButton name="PoorCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="195" y="-230" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      <CheckButton name="CommonCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="305" y="-230" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      <CheckButton name="UncommonCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="430" y="-230" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      <CheckButton name="RareCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="195" y="-265" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      <CheckButton name="EpicCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="305" y="-265" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      <CheckButton name="LegendaryCheckbox" inherits="UICheckButtonTemplate">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="430" y="-265" />
+					</Anchor>
+				</Anchors>
+        <Scripts>
+          <OnClick>QualityButton_OnClick();</OnClick>
+        </Scripts>
+			</CheckButton>
+      
+      
+			<EditBox name="JFBoxHowMany" inherits="InputBoxTemplate" letters="2" numeric="true">
+				<Size>
+					<AbsDimension x="100" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="175" y="-98" />
+					</Anchor>
+				</Anchors>
+			</EditBox>
+			<EditBox name="JFBoxMaxDelete" inherits="InputBoxTemplate" letters="7" numeric="true">
+				<Size>
+					<AbsDimension x="100" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="175" y="-156" />
+					</Anchor>
+				</Anchors>
+			</EditBox>
+      
+      <CheckButton name="JFVerboseCheckbox" inherits="UICheckButtonTemplate" text="">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="150" y="-310" />
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+      
+			<Button name="JFOptionsButtonHide" inherits="UIPanelButtonTemplate" text="Hide Junk Filter">
+				<Size>
+					<AbsDimension x="137" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="27" y="-468" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFOptionsButtonHide_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="JFOptionsButtonShowJF" inherits="UIPanelButtonTemplate" text="Show Junk Filter">
+				<Size>
+					<AbsDimension x="121" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="193" y="-468" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						JFOptionsButtonShowJF_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				JunkFilterConfig_OnLoad(self)
+				self:RegisterForDrag("LeftButton");
+			</OnLoad>
+			<OnDragStart>
+				self:StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+			</OnDragStop>
+		</Scripts>
+	</Frame>
+</Ui>

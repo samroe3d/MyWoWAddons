@@ -1,0 +1,11 @@
+## Title: Junk Filter
+## Version: 1.13
+## Author: CaptJack2883
+## Interface: 11305
+## OptionalDeps: Junk_Filter
+## SavedVariablesPerCharacter: JFHowMany, JFMaxCopperDelete, JFVerboseToggle, JFMainHidden, JFEnglishVerbose, JFReporting, JFPoor, JFCommon, JFUncommon, JFRare, JFEpic, JFLegendary
+
+Junk_Filter.xml
+Junk_Filter.lua
+JunkFilterConfig.xml
+JunkFilterConfig.lua

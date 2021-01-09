@@ -1,0 +1,77 @@
+Junk Filter by CaptJack2883
+
+Version 1.13
+	New Features:
+	You can now select the quality of items to delete. It still waits until the bags are full before deleting anything, and you can select individual qualities. Be careful when selecting higher qualities, as there is no way to undelete items, but it should still ask to confirm deletion of Uncommon and higher items.
+
+	Bug Fixes:
+	Fixed LUA Errors
+	Updated Options Screen
+	Changed Verbose Mode into Reporting Mode, which is less spammy, but still reports the items that are deleted. This is now turned on by default for new installations, but existing users will need to activate the checkbox in interface options.
+	Added title text to main window.	
+
+Version 1.12
+
+	Updated TOC File for Patch 9.0
+	Fixed background due to Shadowlands updates.
+
+Version 1.11
+	
+	Updated TOC File for Patch 8.3
+
+Version 1.10
+
+	Updated TOC File for Patch 8.1
+	Didn't realize I never updated the TOC for Legion... 
+	Hopefully it still works.
+	I also changed my name on a lot of stuff, so if you noticed the namechange, its still 'me'.
+
+Version 1.09
+
+	Updated TOC File for Patch 6.0
+
+Version 1.08
+
+	Update to defaults: If no settings are found, JunkFilter will show main window.
+	Updated variable names to prevent conflicts.
+	Actually made the frame movable now. 
+	Fixed some typos in the Changelog.
+
+Version 1.07
+
+	Updated TOC File for Patch 5.4
+
+Version 1.06
+
+	Fixed Options button to actually go to the correct page all the time.
+	Moved/Added more Verbosity to Verbose Mode. Verbose Mode is now very Spammy.
+	I can put a half-verbose mode for those that want a little information, but not too much. If this is
+	requested, please let me know how much info is enough or too much.
+
+	I also fixed the problem of missing the expected amount of empty slots.
+
+Version 1.05
+
+	Updated TOC File for Patch 5.3
+	Fixed Verbose Mode to actually work.
+
+Version 1.04
+
+	Found and fixed a bug with using very high values for the Max Copper Delete field. Thanks to Aleksej89 for help finding the bug.
+		
+Version 1.03
+
+	Updated TOC File for Patch 5.2
+
+Version 1.02
+
+	Updated TOC File for Patch 5.1
+
+Version 1.01
+
+	Fixed Interface Options not displaying properly on first load.
+
+Version 1.0 (WoW Version 5.0)
+
+	First Release Version. This addon will wait for your bags to fill up, then when the number of empty slots in your bag reaches the set number (default 5), it will delete the cheapest grey items to make room for other loot.
+	You can change the options by clicking the Options button, or going into Interface Options under Addons.

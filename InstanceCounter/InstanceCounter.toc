@@ -1,0 +1,10 @@
+
+## Interface: 11305
+## Title: InstanceCounter
+## Version: 1.14.3.1
+## Author: Emrus
+## Notes: Keeps track of the five instances per hour cap
+## SavedVariables: InstanceCounterDB
+
+Locales\InstanceCounter-enUS.lua
+InstanceCounter.lua
